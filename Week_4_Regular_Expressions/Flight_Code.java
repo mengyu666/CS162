@@ -12,14 +12,13 @@ public class Flight_Code {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		while (sc.hasNext()) {
-			String s = "";
-			s = sc.next();
-			boolean bool = s.matches("[A-Z]{2,3}[0-9]{3,4}");
+			String s = sc.next(); ///user input
+			boolean bool = s.matches("[A-Z]{2,3}[0-9]{3,4}"); //verify that the user enters a valid flight code
 			if (bool) {
-				System.out.println("Flight code is valid");
+				System.out.println("Flight code is valid"); //Flight code is valid
 				System.exit(0);
 			} else {
-				System.out.println("Flight code is NOT valid");
+				System.out.println("Flight code is NOT valid"); //Flight code is NOT valid
 			}
 		}
 	}

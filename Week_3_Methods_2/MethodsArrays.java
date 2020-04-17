@@ -53,7 +53,7 @@ public class MethodsArrays {
 		for (int i = 0; i < array.length; i++) {
 			sum += array[i];
 		}
-		return sum / array.length;
+		return (double)sum / (double)array.length;
 	}
 
 	// printArray() method
